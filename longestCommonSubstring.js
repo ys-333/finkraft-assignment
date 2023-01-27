@@ -5,7 +5,7 @@ function longestCommonSubstring(n1, n2, count) {
     return count
   }
   if (s1[n1 - 1] == s2[n2 - 1]) {
-    count = longestCommonSubstring(i - 1, j - 1, count + 1)
+    count = longestCommonSubstring(n1 - 1, n2 - 1, count + 1)
   }
   count = Math.max(
     count,
